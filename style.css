@@ -13,38 +13,7 @@
 
 /* ##### -- MOBILE LAYOUT -- ##### */
 
-nav {
-  width: 25%;
- 
-}
 
-
-
-.menu-content {
-  background-color: greenyellow;
-  position: absolute;
-  display: inline;
-  padding: 10px;
-}
-
-nav h3 {
-  color: rgb(12, 5, 5);
-}
-
-nav li h3:hover {
-  color: black;
-}
-
-nav li{
-  margin-bottom: 10px;
-}
-nav a {
-  text-decoration: none;
-}
-
-nav a:hover {
-  background-color: blue;
-}
 
  /* ============================
  BEGIN TABLET/DESKTOP SCREENS
@@ -53,43 +22,63 @@ nav a:hover {
 @media screen and (min-width: 768px) {
 
 /* ****-NAV MENU-**** */
-nav {
-  width: 90%;
-  height: 60%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+
+i.brg {
+  display: hidden;
 }
 
-.burgerpic {
-  display:none;
-}
-
-.menu-content {
-  display: inherit;
-  background-color: rgba(0, 0, 0, 0.60);
-  box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.75);
-}
-
-nav h3 {
-  color: white;
-}
-
-nav a {
+a {
   text-decoration: none;
 }
 
-nav ul {
-  display:flex;
-  justify-content: space-between;
-  align-content: center;
+nav {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-nav li {
-  margin: 0px;
-  padding: 0px 10px;
+ul {
+  background: darkorange;
+  list-style: none;
+  padding-left: 0;
 }
 
-  nav li h3:hover {
-    color: rgb(245, 236, 114);
-  }
+li {
+  color: #000;
+  background: darkorange;
+  display: block;
+  float: left;
+  padding: 16px;
+  position: relative;
+  text-decoration: none;
+}
+
+li a {
+  color: #000;
+}
+
+li:hover {
+  color: #eee;
+  background: blue;
+  cursor: pointer;
+}
+
+ul li ul {
+  color: #eee;
+  background: orange;
+  visibility: hidden;
+  position: absolute;
+  margin-top: 16px;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
