@@ -1,0 +1,84 @@
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.brg::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f0c9";
+
+}
+
+/* ##### -- MOBILE LAYOUT -- ##### */
+
+
+
+ /* ============================
+ BEGIN TABLET/DESKTOP SCREENS
+ ============================ */
+ 
+@media screen and (min-width: 768px) {
+
+/* ****-NAV MENU-**** */
+
+i.brg {
+  display: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  background: darkorange;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  color: #000;
+  background: darkorange;
+  display: block;
+  float: left;
+  padding: 16px;
+  position: relative;
+  text-decoration: none;
+}
+
+li a {
+  color: #000;
+}
+
+li:hover {
+  color: #eee;
+  background: blue;
+  cursor: pointer;
+}
+
+ul li ul {
+  color: #eee;
+  background: orange;
+  visibility: hidden;
+  position: absolute;
+  margin-top: 16px;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
