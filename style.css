@@ -1,0 +1,95 @@
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.brg::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f0c9";
+
+}
+
+/* ##### -- MOBILE LAYOUT -- ##### */
+
+nav {
+  width: 25%;
+ 
+}
+
+
+
+.menu-content {
+  background-color: greenyellow;
+  position: absolute;
+  display: inline;
+  padding: 10px;
+}
+
+nav h3 {
+  color: rgb(12, 5, 5);
+}
+
+nav li h3:hover {
+  color: black;
+}
+
+nav li{
+  margin-bottom: 10px;
+}
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: blue;
+}
+
+ /* ============================
+ BEGIN TABLET/DESKTOP SCREENS
+ ============================ */
+ 
+@media screen and (min-width: 768px) {
+
+/* ****-NAV MENU-**** */
+nav {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.burgerpic {
+  display:none;
+}
+
+.menu-content {
+  display: inherit;
+  background-color: rgba(0, 0, 0, 0.60);
+  box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.75);
+}
+
+nav h3 {
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+nav li {
+  margin: 0px;
+  padding: 0px 10px;
+}
+
+  nav li h3:hover {
+    color: rgb(245, 236, 114);
+  }
